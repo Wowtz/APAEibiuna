@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apae Ibiúna</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <div class="logoapae1">
+        <div class="superior">
+          <div class="apaeoriginal">
+            <a target="_blank" rel="noopener noreferrer" href="https://apae.com.br/">
+              <%= image_tag "apaem.svg", style: 'float:left; margin-top:10px;height:70px;' %>
+              <span class="a-apaebrasil">APAE BRASIL </span>
+            </a>
+          </div>
+          <div class="sociocont">
+            <%= image_tag "apaeibiuna.jpg", style: 'float:left;height:70px;' %>
+            <a target="_blank" rel="noopener noreferrer" class="doacao" href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_lyJ0I4zylQS9OHHnVyt_8VC-ELAoTrkLCo4P9zUqKHBQQ/viewform?fbclid=IwAR11fBV80pwv4bSfIVFXVSMuF8eJLqd4X4wtwJ8dJy4dM0u_TPxqP8ZWgjU">
+              <b> CONTRIBUA <i class='fas fa-hand-holding-heart'></i> </b>
+            </a>
+          </div>
+        </div>
+        <div class="navegador">
+          <nav role="navigation" class="navegador1">
+            <ul class="navlist">
+              <li class="item item1"><a href="<%= inicios_path %>">Início</a></li>
+              <li class="item"><a>APAE</a></li>
+              <li class="item"><a>Bazar APAE</a></li>
+              <li class="item"><a>Notícias</a></li>
+              <li class="item"><a>Parceiros</a></li>
+              <li class="item"><a>Doações</a></li>
+              <li class="item"><a href="<%= new_contato_path %>">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-content">
+      <section class="main-content">
+        <%= yield %>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="contato">
+        <b><a class="telefone">
+          <i class="fas fa-phone"></i>
+          <span class="telemail"> (15) 3248-2444 - IBIUNAAPAE@GMAIL.COM </span>
+          <span class="endereco"> Av. Gabriel Monteiro da Silva, 804 - Centro, Ibiúna - SP, 18150-000 </span>
+          <a class="facebookbtn" href="https://www.facebook.com/apaeibiunasp">
+            <i class="fab fa-facebook-square"></i>
+          </a></b>
+        </div>
+          <div class="apaeibiunaimg">
+            <%= image_tag "logo_apae.png", style: 'float:left; margin-top:10px' %>
+            <a class="meulink" href="https://github.com/Wowtz/"> Produzidor por <i class="fab fa-github"></i> </a>
+          </div>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

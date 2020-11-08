@@ -1,0 +1,26 @@
+<div class="contato">
+  <div class="conttitulo">
+  <h1>Fale Conosco</h1>
+  </div>
+  <div class="contform">
+    <%= form_for @contato do |f| %>
+      <%= f.label :nome %> <br>
+      <%= f.text_field :name, required: true %> <br>
+
+      <%= f.label :email %> <br>
+      <%= f.text_field :email, required: true %> <br>
+
+      <%= f.label :mensagem %> <br>
+      <%= f.text_area :message, as: :text, required: true %> <br>
+
+      <%= f.submit "Enviar Mensagem", class: "button" %> <br>
+    <% end %>
+  </div>
+  <div class="contendereco">
+    <p class="estamosaqui">Estamos aqui!</p>
+    <div class="horariodefunc">
+      <p>Horário de Funcionamento (seg à sex)</p>
+      <p>Das 08:00 às 12:00 e das 13:00 as 17:00</p>
+    </div>
+  </div>
+</div>

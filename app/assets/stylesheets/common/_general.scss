@@ -1,0 +1,166 @@
+* { padding: 0; font-size: 100%; border: none; outline: none; margin: 0;}
+
+header {
+  :link, :visited {
+    text-decoration:none;
+    color: rgb(32, 31, 31);
+    display: flex;
+  }
+  .logoapae1{
+    width: 100%;
+    font-family: 'ABeeZee', sans-serif;
+    .superior {
+      display: flex;
+      .apaeoriginal {
+        margin-left: 5%;
+        font-weight: bold;
+        -webkit-transition: font-size .5s ease;
+        -moz-transition: font-size .5s ease;
+        -o-transition: font-size .5s ease;
+        transition: font-size .5s ease;
+        color: #161616;
+      }
+      .sociocont {
+        position: absolute;
+        margin-left: 83%;
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        margin-top: 5px;
+        b {
+          margin-top: 30px;
+          position: center;
+          color: #303030;
+        }
+      }
+      .sociocont, .apaeoriginal, b {
+        -webkit-transition: font-size .25s ease;
+        -moz-transition: font-size .25s ease;
+        -o-transition: font-size .25s ease;
+        transition: font-size .25s ease;
+        color: #161616;
+      }
+      .apaeoriginal:hover, :link:hover, :visited:hover {
+        color: rgb(55, 55, 56);
+        font-size: 1.01em;
+      }
+      b:hover {
+        cursor: pointer;
+        font-size: 1.1em;
+        color: #404040;
+      }  
+    }
+    .a-apaebrasil {
+      font-size: 2em;
+      padding: 5px;
+      margin-top: 20px;
+    }
+  }
+  .navegador {
+    background:white;
+    width: 100%;
+    margin: none !important;
+    .navegador1 {
+      background-color: #2485d2;
+      height: 100%;
+      ul {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        list-style: none;
+        display: flex;
+        margin-top: 20px;
+        padding: 25px 0;
+        width: 100%;
+        justify-content: center;
+      }
+      .item {
+        float: left;
+        position: relative;
+        text-align: center;
+        z-index: 100;
+        height: 22px;
+        border-left: solid;
+        border-width: 2px;  
+        display: block;
+        text-decoration: none;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: aliceblue;   
+          a {
+          color: aliceblue;   
+          font-size: 1em;
+          margin: 0;
+          text-align: center;
+          -webkit-transition: font-size .1s ease;
+          -moz-transition: font-size .1s ease;
+          -o-transition: font-size .1s ease;
+          transition: font-size .1s ease;
+          }
+              a:hover {
+              text-decoration: underline;
+              cursor: pointer;
+              font-size: 1.1em;
+              color: paleturquoise;
+            }
+      }
+      .item1 {
+        border: none;
+      }
+    }
+  }
+  
+}
+footer {
+  font-family: 'ABeeZee', sans-serif;
+  background: #1976d3;
+  width: 100%;
+  height: 170px;  
+  float: center;
+  color: white;
+  margin: none !important;
+  position: static;
+  bottom: 0;
+  left: 0;
+  :link, :visited {
+    text-decoration:none;
+    color: white;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    z-index: 100;
+  }
+  .contato {
+    border-bottom: solid;
+    border-width: 1px;
+    padding: 36px;
+  }
+  .endereco{
+    float: right;
+  }
+  .meulink {
+    float: right;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* Spacement */
+.mr-0 {
+  margin-right: 0;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.no-padding {
+  padding: 0;
+}
+.align-text-left {
+  text-align: left !important;
+}
