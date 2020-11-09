@@ -1,10 +1,21 @@
-* { padding: 0; font-size: 100%; border: none; outline: none; margin: 0;}
+* { 
+  padding: 0; 
+  font-size: 100%; 
+  border: none; 
+  outline: none; 
+  margin: 0;
+}
+
+main {
+  min-height: 91vh;
+}
 
 header {
   :link, :visited {
     text-decoration:none;
     color: rgb(32, 31, 31);
     display: flex;
+    height: 65px;
   }
   .logoapae1{
     width: 100%;
@@ -25,7 +36,6 @@ header {
         margin-left: 83%;
         font-family: Arial, Helvetica, sans-serif;
         display: block;
-        margin-top: 5px;
         b {
           margin-top: 30px;
           position: center;
@@ -98,7 +108,6 @@ header {
               a:hover {
               text-decoration: underline;
               cursor: pointer;
-              font-size: 1.1em;
               color: paleturquoise;
             }
       }
@@ -117,7 +126,6 @@ footer {
   float: center;
   color: white;
   margin: none !important;
-  position: static;
   bottom: 0;
   left: 0;
   :link, :visited {
@@ -133,7 +141,6 @@ footer {
     border-bottom: solid;
     border-width: 1px;
     padding: 36px;
-    font-weight: bold;
   }
   .endereco{
     float: right;

@@ -8,6 +8,13 @@
   <div class="contribuicoes">
     <div class="sociocontri">
       <%= image_tag "socio.jpg", class: 'imagemsocio' %>
+      <div class="dadossocio">
+        <h2>Sócio Contribuinte APAE - Ibiúna</h2>
+        </p>CNPJ: 34.037.148/0001-12
+        </p>Rua Benjamim Constant, n 245 - Centro 
+        </p>Tel: (15) 3248-2444
+        </p>Tel celular: (15) 99671-3142
+      </div>
     </div>
     <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_lyJ0I4zylQS9OHHnVyt_8VC-ELAoTrkLCo4P9zUqKHBQQ/viewform?fbclid=IwAR11fBV80pwv4bSfIVFXVSMuF8eJLqd4X4wtwJ8dJy4dM0u_TPxqP8ZWgjU">
       <div class="containerdonate">
@@ -39,12 +46,45 @@
       </div>
     </div>
   </div>
+
   <div class="parceiros">
-    <h1> parceiros </h1>
+    <div class="containerparc">
+      <input type="radio" name="images" class="i1" id="i1" checked>
+      <input type="radio" name="images" class="i2" id="i2">
+      <input type="radio" name="images" class="i3" id="i3">
+      <div class="slider-img img-1" id="img1">
+        <%= image_tag "nestle.png", class: "imagens n1" %>
+        <label for="i3" class="pre"></label>
+        <label for="i2" class="next"></label>
+      </div>
+      <div class="slider-img img-2" id="img2">
+        <%= image_tag "apaeibiuna.jpg", class: "imagens n2" %>
+        <label for="i1" class="pre"></label>
+        <label for="i3" class="next"></label>
+      </div>
+      <div class="slider-img img-3" id="img3">
+        <%= image_tag "socio.jpg", class: "imagens n3" %>
+        <label for="i2" class="pre"></label>
+        <label for="i1" class="next"></label>
+      </div>
+
+      <div class="nav">
+       <label class="dots dot1" for="i1"></label>
+       <label class="dots dot2" for="i2"></label>
+       <label class="dots dot3" for="i3"></label>
+      </div>
+    </div>
   </div>
 
   <div class="inicioeventos">
-    <h1> eventos </h1>
+    <div class="eventotit">
+      <h1> PRÓXIMOS EVENTOS </h1>
+    </div>
+    <div class="agendaeventos">
+      <h2>
+        ...
+      </h2>
+    </div>
   </div>
 
   <div class="inicioacessos">
