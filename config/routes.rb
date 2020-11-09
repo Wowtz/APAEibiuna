@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :news
-  root 'news#index'
+  root 'inicios#index'
   resources :contatos
   resources :inicios
 end
