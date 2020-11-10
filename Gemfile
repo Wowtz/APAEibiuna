@@ -19,6 +19,7 @@ gem 'material_icons'
 gem 'font-awesome-rails'
 gem 'sprockets', '~> 3.7.2'
 gem 'momentjs-rails'
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
