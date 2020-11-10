@@ -90,14 +90,14 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   ############## CONFIGURAÇÃO HOST
-  config.action_mailer.default_url_options = { host: 'https://fast-taiga-18742.herokuapp.com' }
+  config.action_mailer.default_url_options = {host: ENV['MAILER_DOMAIN'] }
   config.action_mailer.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
-    :domain => 'yourdomain.com',
-    :address => 'https://fast-taiga-18742.herokuapp.com',
+    :domain => ENV['MAILER_DOMAIN'],
+    :address => ENV['MAILER_ADDRESS'],
     :port => 587,
     :authentication => :plain,
     :enable_starttls_auto => true
