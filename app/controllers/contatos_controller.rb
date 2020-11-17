@@ -11,7 +11,8 @@ class ContatosController < ApplicationController
   def create
     @contato = Contato.new(params[:contato])
     @contato.request = request
-    if @contato.deliver
+    if @contato.save
+      ContatosMailer.faleconosco(@contato).deliver
       flash.now[:error] = nil
     else
       flash.now[:error] = 'Mensagem não foi enviada, preencha corretamente os campos.'
