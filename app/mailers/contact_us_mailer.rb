@@ -1,7 +1,4 @@
 class ContactUsMailer < ActionMailer::Base
-  helper RentsHelper
-
-
   default from: "from@example.com"
 
   def contact_email(user)
