@@ -3,6 +3,6 @@ class ContatosMailer < ApplicationMailer
 
   def faleconosco(contato)
     @contato = contato
-    mail to: contato.email, subject: "teste"
+    mail to: contato.email, subject: "teste", from: "walter.camargo.gr@gmail.com"
   end
 end
