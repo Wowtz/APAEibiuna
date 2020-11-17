@@ -132,7 +132,7 @@
     height: 20vw;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
     .containerparc{
       margin: 20px auto;
       width: 65%;
@@ -155,7 +155,7 @@
       }
       .imagens {
         height: 80%;
-        width: 80%;
+        width: auto;
       }
       .pre, .next {
         width: 12%;
@@ -195,8 +195,13 @@
           margin: 0 7px;
         }
       }
+      #img1, #img2, #img3 {
+        opacity: 0;
+        transition-duration: 2s;
+      }
       .i1:checked ~ #img1, .i2:checked ~ #img2, .i3:checked ~ #img3 {
         z-index: 9;
+        opacity: 1;
       }
       .i1:checked ~ .nav .dot1 {
         background-color: rgba(136, 136, 206, 0.993);
@@ -350,4 +355,35 @@
   75% {
     font-size: 1.08em;
   }
+}
+
+@keyframes slidering2 {
+  
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 0.65;
+  }
+
+  90% {
+    opacity: 0.5;
+  }
+}
+
+.imagens:nth-child(1){
+
+}
+
+.imagens:nth-child(2){
+  animation-delay: 5s;
+}
+
+.imagens:nth-child(3){
+  animation-delay: 10s;
 }

@@ -73,6 +73,12 @@
        <label class="dots dot2" for="i2"></label>
        <label class="dots dot3" for="i3"></label>
       </div>
+
+      <div class="automatic-nav">
+        <label class="dots autodot1" for="i1"></label>
+        <label class="dots autodot2" for="i2"></label>
+        <label class="dots autodot3" for="i3"></label>
+      </div>
     </div>
   </div>
 
@@ -127,3 +133,13 @@
   </div>
 </div>
 
+<script>
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('i' + counter).checked = true
+    counter++
+    if(counter > 3){
+      counter = 1
+    }
+  }, 4000)
+</script>

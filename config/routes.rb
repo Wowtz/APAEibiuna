@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  resources :contacts
   resources :news
   root 'inicios#index'
-  resources :contatos
+  resources :contacts
   resources :inicios
 end
