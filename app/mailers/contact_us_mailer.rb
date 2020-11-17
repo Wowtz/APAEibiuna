@@ -4,6 +4,6 @@ class ContactUsMailer < ActionMailer::Base
   def contact_email(user)
     @user = user
     mail(:to => "walter.camargo.gr@gmail.com",
-         :subject => "Contato realizado pelo site Asstam")
+         :subject => "Contato realizado pelo site APAE Ibiúna")
   end
 end
