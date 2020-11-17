@@ -8,14 +8,12 @@ class ContactsController < ApplicationController
   end
 
   def create
-    # Create the contact from params
     @contact = Contact.new(contact_params)
-    if @contact.save
-      # Deliver the signup email
-      ContactUsMailer.send_signup_email(@contact).deliver
-      render :action => 'new'
+    if @contact.deliver
+      redirect_to root_path, notice: "Sua mensagem foi enviada com sucesso!"
     else
-      render :action => 'new'
+      flash[:error] = "Erro: Sua mensagem não foi enviada!"
+      render new_contact_path
     end
   end
 
